@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activityTwo"
+        android:id="@+id/textView"
+        android:textColor="#ffff7254"
+        android:textSize="23sp"/>
+
+        <TextView android:id="@+id/onCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onCreateMessage"/>
+
+        <TextView android:id="@+id/onStart"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/onStartMessage"/>
+
+        <TextView android:id="@+id/onResume"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/onResumeMessage"/>
+
+        <TextView android:id="@+id/onRestart"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/onRestartMessage"/>
+</LinearLayout>

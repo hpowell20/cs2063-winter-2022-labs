@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab 2 Activity Lifecycle</string>
+
+    <string name="activityOne">Activity One</string>
+    <string name="activityTwo">Activity Two</string>
+
+    <string name="onCreateMessage">onCreate() calls: 0</string>
+    <string name="onStartMessage">onStart() calls: 0</string>
+    <string name="onResumeMessage">onResume() calls: 0</string>
+    <string name="onRestartMessage">onRestart() calls: 0</string>
+    <string name="incomplete">incomplete</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
