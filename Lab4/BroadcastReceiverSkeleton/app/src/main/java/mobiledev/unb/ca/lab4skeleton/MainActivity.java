@@ -64,116 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Register the activity listener
         setCameraActivityResultLauncher();
-
-        // Set the broadcast receiver alarm values
-        initAlarmValues();
-        // Set the battery filter intents
-        setBatteryIntentFilters();
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        // Unregister the battery receivers to avoid memory leaks
-        removeBatteryIntentFilters();
-    }
-
-    // Private Helper Methods
-    private void setCameraActivityResultLauncher() {
-        cameraActivityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         galleryAddPic();
                     }
                 });
-    }
-
-    private void initAlarmValues() {
-        alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-
-        final Intent setAlarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
-        alarmReceiverIntent = PendingIntent.getBroadcast(MainActivity.this,
-                0,
-                setAlarmIntent,
-                PendingIntent.FLAG_IMMUTABLE);
-
-        // Start the alarm
-        startAlarm();
-    }
-
-    private void startAlarm() {
-        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,
-                SystemClock.elapsedRealtime() + INTERVAL_SIXTY_SECONDS,
-                INTERVAL_SIXTY_SECONDS,
-                alarmReceiverIntent);
-
-        Log.i(TAG, "Alarm Started");
-    }
-
-    private void cancelAlarm() {
-        alarmManager.cancel(alarmReceiverIntent);
-        Log.i(TAG, "Alarm Cancelled");
-    }
-
-    // Battery check methods
-    private final BroadcastReceiver batteryInfoReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String intentAction = intent.getAction();
-            if (Intent.ACTION_BATTERY_OKAY.equals(intentAction)) {
-                startAlarm();
-                Toast.makeText(MainActivity.this,
-                        "Battery level good; starting the alarm",
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            if (Intent.ACTION_BATTERY_LOW.equals(intentAction)) {
-                cancelAlarm();
-                Toast.makeText(MainActivity.this,
-                        "Battery level low; cancelling the alarm",
-                        Toast.LENGTH_SHORT).show();
-            }
-        }
-    };
-
-    // Power Check Methods
-    private final BroadcastReceiver powerInfoReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            String intentAction = intent.getAction();
-            if (Intent.ACTION_POWER_CONNECTED.equals(intentAction)) {
-                startAlarm();
-                Toast.makeText(MainActivity.this,
-                        "Device plugged in; starting the alarm",
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            if (Intent.ACTION_POWER_DISCONNECTED.equals(intentAction)) {
-                cancelAlarm();
-                Toast.makeText(MainActivity.this,
-                        "Device unplugged; cancelling the alarm",
-                        Toast.LENGTH_SHORT).show();
-            }
-        }
-    };
-
-    private void setBatteryIntentFilters() {
-        final IntentFilter batteryIntentFilter = new IntentFilter();
-        batteryIntentFilter.addAction(Intent.ACTION_BATTERY_OKAY);
-        batteryIntentFilter.addAction(Intent.ACTION_BATTERY_LOW);
-        registerReceiver(batteryInfoReceiver, batteryIntentFilter);
-
-        final IntentFilter powerIntentFilter = new IntentFilter();
-        powerIntentFilter.addAction(Intent.ACTION_POWER_CONNECTED);
-        powerIntentFilter.addAction(Intent.ACTION_POWER_DISCONNECTED);
-        registerReceiver(powerInfoReceiver, powerIntentFilter);
-    }
-
-    private void removeBatteryIntentFilters() {
-        unregisterReceiver(batteryInfoReceiver);
-        unregisterReceiver(powerInfoReceiver);
     }
 
     // Camera methods
