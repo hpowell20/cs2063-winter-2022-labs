@@ -15,6 +15,7 @@ import android.provider.MediaStore;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import android.util.Log;
@@ -123,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Image saved!");
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     private void mediaStoreAddPicToGallery() {
         String name = imageFileName;
         Bitmap bitmap = BitmapFactory.decodeFile(currentPhotoPath);
