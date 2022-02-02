@@ -1,33 +1,24 @@
 package mobiledev.unb.ca.lab4skeleton;
 
 import android.app.Activity;
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.SystemClock;
 import android.provider.MediaStore;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -41,11 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private static final String TIME_STAMP_FORMAT = "yyyyMMdd_HHmmss";
-    private static final int INTERVAL_SIXTY_SECONDS = 60 * 1000;
-
-    // Attributes for working with an alarm
-    private AlarmManager alarmManager;
-    private PendingIntent alarmReceiverIntent;
 
     // Attributes for storing the file photo path
     private String currentPhotoPath;
@@ -66,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
         setCameraActivityResultLauncher();
     }
 
+    // Private Helper Methods
+    private void setCameraActivityResultLauncher() {
+        cameraActivityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     if (result.getResultCode() == Activity.RESULT_OK) {
@@ -74,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    // Camera methods
     private void dispatchTakePhotoIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
@@ -92,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             // Take the picture if the File object was created successfully
             if (null != photoFile) {
                 Uri photoURI = FileProvider.getUriForFile(this,
-                        "mobiledev.unb.ca.lab4skeleton.provider",
+                        "mobiledev.unb.ca.lab3intents.provider",
                         photoFile);
 
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
@@ -135,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "Image saved!");
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.Q)
     private void mediaStoreAddPicToGallery() {
         String name = imageFileName;
         Bitmap bitmap = BitmapFactory.decodeFile(currentPhotoPath);
@@ -150,17 +137,16 @@ public class MainActivity extends AppCompatActivity {
 
         try (OutputStream fos = resolver.openOutputStream(Objects.requireNonNull(imageUri))) {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-            //Objects.requireNonNull(fos).close();
         } catch (IOException e){
             Log.e(TAG,"Error saving the file ", e);
         }
     }
 
     private void mediaScannerAddPicToGallery() {
-        File file = new File(currentPhotoPath);
-        MediaScannerConnection.scanFile(this,
-                new String[]{file.toString()},
-                new String[]{file.getName()},
-                null);
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = new File(currentPhotoPath);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        this.sendBroadcast(mediaScanIntent);
     }
 }
