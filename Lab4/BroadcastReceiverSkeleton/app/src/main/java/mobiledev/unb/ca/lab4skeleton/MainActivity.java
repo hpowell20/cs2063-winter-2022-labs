@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             // Take the picture if the File object was created successfully
             if (null != photoFile) {
                 Uri photoURI = FileProvider.getUriForFile(this,
-                        "mobiledev.unb.ca.lab3intents.provider",
+                        "mobiledev.unb.ca.lab4skeleton.provider",
                         photoFile);
 
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);

@@ -147,6 +147,6 @@ Create a document with the following items:
 
 **Lab Completion**
 
-* Take screenshots of the application in a either a low battery Show the working app running on an emulator to the instructor or TA
+* Take screenshots of the application in a either a low battery
 * Submit `MainActivity.java`, `AlarmReceiver.java`, and your answers to the writeup task to the Lab3 drop box folder on D2L
 * Keep a copy of your project work and answers for future reference
