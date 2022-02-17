@@ -1,0 +1,17 @@
+TOTAL: 10 marks
+
+Completion of MainActivity TODOs (5 marks)
+  - Get the array list of courses (1 mark)
+  - Set the recycler view object (1 mark)
+  - Get the course at the index position of the dataset (1 mark)
+  - Set the TextView label using the course title (1 mark)
+  - Add the onClickListener code (1 mark)
+
+Completion of DetailsActivity TODOs (4 marks; 1 for each TODO)
+  - Get the Intent and it's extras (1 mark)
+  - Set the description TextView to be the course description (1 mark)
+  - Make the TextView scrollable (1 mark)
+  - Set the title of the action bar to be the course title (1 mark)
+
+Scrollable TextView (1 mark)
+  - Addition of android:scrollbars="vertical" to the activity_detail.xml file

@@ -1,0 +1,279 @@
+{
+  "courses": [
+    {
+      "courseID": "CS1003",
+      "name": "Programming and Problem Solving for Engineers 4ch",
+      "description": "Introduction to the use of digital computers for problem solving and communicating solutions. Covers use of procedures, decisions, loops and arrays focusing on scientific and engineering problem analysis, algorithm design, and program structure. Also includes organizing, tabulating, and graphing program output with different software tools to communicate results. This course is currently taught primarily in Matlab. \n\nPrerequisite: High School Mathematics.\n\nCorequisites: PHYS 1081 or equivalent, or permission from instructor. "
+    },
+    {
+      "courseID": "CS1013",
+      "name": "Computer Science Concepts (C/C++) 4ch",
+      "description": "This course explores advanced language features and introduces software engineering. Topics include data abstraction, encapsulation, inheritance, polymorphism, recursion, file processing, use of libraries and modules, numerical applications, machine representation of data, and computer organization. This course may not be taken for credit by BCS, BISys, or BScSwE students. \n\nPrerequisite: CS 1003 . "
+    },
+    {
+      "courseID": "CS1023",
+      "name": "Data Structures and Algorithms for Engineers 4ch",
+      "description": "Introduction to the ideas of abstraction of procedures and data. Implementation and handling of the fundamental data types: lists, stacks, queues, and graphs. Basic concepts of discrete mathematics, elements of combinatorics, aspects of complexity and recursion and algorithm development, including estimation of program resource utilization. This course is currently taught in C. Note: This course may not be taken for credit by BCS, BISys, or BScSwE students.\n\nPrerequisite: CS 1003 . "
+    },
+    {
+      "courseID": "CS1043",
+      "name": "Information Technology Fluency 3ch",
+      "description": "Intended to give students an introduction to Information Technology (IT) fluency. Topics include: hardware and software concepts, computer interfaces, networking, the Internet, the World Wide Web, HTML, algorithms, spreadsheets, database concepts, digital representation, multimedia, social implications of IT, privacy and security. Note:This course will not be counted for credit toward degree programs offered by the Computer Science and Engineering faculties."
+    },
+    {
+      "courseID": "CS1055",
+      "name": "Web Technologies and Applications 3ch",
+      "description": "Introduction to basic web enabling technologies such as HTML, XML, CSS, JavaScript and PHP. Design of simple web pages using basic web technologies. Introduction to common web application technologies such as searching, instant messaging, blogging, social networking, audio/video streaming, web geographical information systems, mobile web, web intelligence, and web security and privacy. Basic mechanisms of web application technologies. Comparative studies of web application tools. Learning effective usage of web application tools. Note: This course will not be counted for credit toward degree programs offered by the Computer Science and Engineering faculties."
+    },
+    {
+      "courseID": "CS1073",
+      "name": "Introduction to Computer Programming I (in Java) 4ch",
+      "description": "Covers fundamental concepts such as decisions, loops, arrays, classes, methods and inheritance; focusing on problem analysis, algorithm design, program structure and readability. Introduction to the Java API libraries. \n\nPrerequisite: High School Mathematics."
+    },
+    {
+      "courseID": "CS1083",
+      "name": "Introduction to Computer Programming II (in Java) 4ch",
+      "description": "Continues CS 1073 focusing on problem analysis, algorithm design program structure and readability. Covers recursion, sorting and searching, data abstraction, encapsulation, inheritance, polymorphism, simple data structures and files, testing and debugging.\n\nPrerequisite: CS 1073 . "
+    },
+    {
+      "courseID": "CS1203",
+      "name": "Overview of Computer Science 3ch",
+      "description": "This course surveys many of the fundamental concepts and theories used throughout computer science. Topics include history of computers, computer hardware, system software, programming languages, networking, theory of computation, social issues, and other topics within computer science. Emphasis is also placed on topics relevant to various areas of study within the BCS program.\n\nPrerequisite: None. Note: Intended only for first year computer science students and interested students from other Faculties."
+    },
+    {
+      "courseID": "CS1303",
+      "name": "Discrete Structures 4ch",
+      "description": "Introduces topics in discrete mathematics important in computer science, including: propositional logic, predicate logic using quantifiers, direct and indirect proofs, summation and product notation, mathematical induction, elementary set theory and counting. Students are expected to write mathematical proofs throughout the course. Note: credit will not be given for both CS 1303 and MATH 2203 .\n\nPrerequisite: High School Mathematics. "
+    },
+    {
+      "courseID": "CS2033",
+      "name": "Software Design for Engineers 4ch",
+      "description": "An introduction to software design and implementation in the context of a team project emphasizing object-oriented programming and modularization for building reliable and reusable system components.\n\nPrerequisites: CS 1023 , ECE 2412 or equivalent. Note: This course may not be taken for credit by BCS,BISys, or BScSwE students."
+    },
+    {
+      "courseID": "CS2043",
+      "name": "Software Engineering I 4ch",
+      "description": "Introduction to fundamentals of the discipline of software engineering with focus on the software development life cycle. Topics include software development methodologies and processes, requirements analysis, modeling, architecture, design, implementation, testing, and maintenance. Basics of software management are also introduced.\n\nPrerequisite: CS 1083 . Note: Credit is not given for both CS 2013 and CS 2043. "
+    },
+    {
+      "courseID": "CS2053",
+      "name": "Introduction to Game Development 4ch",
+      "description": "Introduces basic concepts and technologies for computer and video game development, including math and physics foundations for games, core technologies and algorithms in game development, game design and implementation, and game development environments and programming. By taking this course, students will understand various elements and phases of game development. Students will develop simple games during the course.\n\nPrerequisite(s): CS 2043 or CS 2253 . "
+    },
+    {
+      "courseID": "CS2063",
+      "name": "Introduction to Mobile Application Development 4ch",
+      "description": "Introduces students to the development of application software for mobile computing platforms.  Characteristics of mobile computing platforms versus non-mobile platforms. Mobile application design principles, including design of effective user interaction and factors that affect application performance. Programming common mobile application functionality such as location, orientation, and motion awareness, as well as touch, gesture, and camera input. Interacting with remote APIs (e.g. Google Maps). Students will gain experience creating and testing applications for a selected currently prominent mobile platform.Prerequisite(s): CS 2043 or CS 2253 ."
+    },
+    {
+      "courseID": "CS2253",
+      "name": "Machine Level Programming 4ch",
+      "description": "Introduces students to lower-level computer operations and the association with higher-level procedural programming constructs. Topics include binary representation of data, instruction formats and execution, assembler programming, scope, functions, user-defined data types using both low- and high-level programming languages. \n\nPrerequisites: CS 1083 or equivalent and level of programming experience, at the discretion of the instructor. Note: Credit cannot be obtained for CS 2253 by students who have completed both CS 2023 and CS 2813."
+    },
+    {
+      "courseID": "CS2333",
+      "name": "Computability and Formal Languages 4ch",
+      "description": "This course introduces students to some of the fundamental ideas in theoretical computer science: functions and relations, formal languages, finite automata, regular languages, context-free grammars, context-free languages, push-down automata, pumping lemmas, Turing machines, the Church-Turing thesis, recursive and recursively enumerable languages, the Chomsky hierarchy, the halting problem and other unsolvable decision problems, problem reducibility, and fundamental computational complexity classes.\n\nPrerequisites: CS 1303 , 30 ch, and ( CS 1073 or CS 1003 ). "
+    },
+    {
+      "courseID": "CS2383",
+      "name": "Data Structures and Algorithms 4ch",
+      "description": "Presents formal specifications of abstract data types and their data structure representations, operations, and algorithms. Includes priority queues, dictionaries, graphs, heaps, hash tables, binary search trees, balanced trees,and graph adjacency representations. Covers sorting, searching, dynamic storage handling, and fundamental graph algorithms. Asymptotic analysis of time and space complexity are taught and used throughout the course. Students are expected to implement a variety of data structures and graph algorithms.\n\nPrerequisites: CS 1083 and CS 1303 . Note: Credit is not given for both CS 2383 and CS 3323 . "
+    },
+    {
+      "courseID": "CS2525",
+      "name": "Microcomputer Applications 3ch",
+      "description": "Introduces students to several software packages commonly available on microcomputers and discusses criteria for evaluating microcomputer systems in different situations. Note: This course may not be taken for credit by BCS, BISys or BScSwE students.\n\nPrerequisite: CS 1003 or CS 1043 . "
+    },
+    {
+      "courseID": "CS2605",
+      "name": "A Selected Language for Programmers 1ch",
+      "description": "Introduces a selected programming language to students who have already been exposed to at least one programming language. This course is given in 13 1-hour lectures throughout the term. \n\nPrerequisite: CS 1083 or equivalent"
+    },
+    {
+      "courseID": "CS2685",
+      "name": "C++ Programming for Programmers 1ch",
+      "description": "Introduces the object-oriented features of C++ to programmers who have already been exposed to Java and C. This course is given in 13 1-hour lectures throughout the term.\n\nPrerequisites: CS 1083 and CS 2253, or knowledge of Java and C."
+    },
+    {
+      "courseID": "CS2703",
+      "name": "Multimedia Applications 3ch",
+      "description": "Introduction to multimedia applications development. Multimedia building blocks: capturing, storing, editing, retrieving, distributing of sound, pictures, and video clips. Creation of world wide web pages, authoring tools. NOTE: Not intended for BCS, BISys or BScSwE students. Credit will not be given for both CS 2703 and CS 3703 .\n\nPrerequisites: CS 1043 and CS 2525 . "
+    },
+    {
+      "courseID": "CS2999",
+      "name": "Problem Solving for Programmers 3ch",
+      "description": "This course entails a hands-on approach to problem solving for computer programmers. Under instructional guidance the students will work on programming problems that represent basic classes of problems found in computer science. Concepts in data structures, algorithms, geometry, and software development and testing are covered. \n\\nPrerequisite: permission of instructor.\n\nCorequisite: CS 2253. "
+    },
+    {
+      "courseID": "CS3003",
+      "name": "Biocomputing in Drug Design I 5ch",
+      "description": "Introduction to biocomputing in the pharmaceutical industry. Topics include molecular modeling, rational drug design, high throughput screening and combinatorial chemistry, protein modeling and 3D bioinformatics. Course includes lectures and a computer laboratory component. Note: This course is also cross-listed as CHEM 3003 and may be taken for either Computer Science or Science credit.\n\nPrerequisites: CHEM 1001, 1012 and BIOL 1001,1012 , or permission of instructor. CHEM 2421 or BIOL 2033 are recommended. "
+    },
+    {
+      "courseID": "CS3025",
+      "name": "Human-Computer Interaction 3ch",
+      "description": "Software design for interactive computing. Topics include: human-computer interaction principles, interface design guidelines, the design and execution of usability studies. The characteristics of various styles of interaction are explored. Emphasis is on user-oriented interfaces. Students design, implement, and perform a usability study on an interactive software application. \n\nPrerequisites: 60 ch and (CS 2043 or MAAC 3102 or permission of instructor). "
+    },
+    {
+      "courseID": "CS3043",
+      "name": "Software Engineering II 4ch",
+      "description": "Examines software development processes and management, visual modeling and Unified Modeling Language, requirements capture, use case analysis, system design and implementation, components, forward and reverse engineering, software engineering tools, testing techniques, configuration management, and project management. \n\nPrerequisite: CS 2043 . Note: Credit is not given for both CS 3013 and CS 3043. "
+    },
+    {
+      "courseID": "CS3113",
+      "name": "Introduction to Numerical Methods 3ch",
+      "description": "Intended for Computer Science and Engineering students. Error analysis, convergence and stability. Approximation of functions by polynomials. Numerical quadrature and differentiation. The solution of linear and non-linear equations and the solution of ordinary differential equations. This course will emphasize the understanding of numerical algorithms and stress applications in the applied sciences, as well as the influence of finite precision and arithmetic on computational results. Credit will not be given for both CS 3113 and MATH 3413 . \n\nPrerequisites: ( CS 1003 or CS 1073 ) and ( MATH 2213 or MATH 1503 ). "
+    },
+    {
+      "courseID": "CS3383",
+      "name": "Algorithm Design and Analysis 4ch",
+      "description": "This course examines the characteristics of algorithms that lead to efficient computer solutions for discrete problems. A variety of different algorithm classes and design techniques, including divide and conquer, greedy, dynamic programming, and backtracking, are introduced and compared. Algorithmic strategies and computational techniques used for distributed systems and intelligent systems are are also examined. \n\nPrerequisites: CS 2333 , CS 2383 and ( STAT 2593 or STAT 3083 ). Note: Credit is only given for one of CS 3383, CS 3913 and CS 3933 . "
+    },
+    {
+      "courseID": "CS3413",
+      "name": "Operating Systems I 4ch",
+      "description": "This course examines the fundamental role of an operating system in relation to the operation of applications. Essential theory of operating systems is covered, including processes, process synchronization, interprocess communications, process scheduling, storage (primary and secondary) management, resource sharing, security, I/O, and user interfaces. At least one of the major Unix shell languages will be covered.\n\nPrerequisites: CS 2253 "
+    },
+    {
+      "courseID": "CS3503",
+      "name": "Systems Analysis, Design and Project Management 4ch",
+      "description": "Introduces students to the life cycle of information systems. Covers techniques and tools used in systems analysis and project management. Emphasizes communication skills, both written and oral, as well as team skills.\n\nPrerequisites: INFO 1103 and 60 ch. "
+    },
+    {
+      "courseID": "CS3613",
+      "name": "Programming Languages 4ch",
+      "description": "Building on students' knowledge of procedural and object oriented programming, this course is a comparative study of modern models of programming. Models such as declarative, concurrent, and relational programming are introduced, and relationships between various models are explored. Formal syntax and semantics of programming languages, as well as basic concepts of programming language translation and interpretation are presented.\n\nPrerequisites: CS 2253 and CS 2333 . "
+    },
+    {
+      "courseID": "CS3703",
+      "name": "Multimedia Design 3ch",
+      "description": "Introduction to the design and production of multimedia applications. Includes issues in capture, storage, and effective use of images, sound, and video; animation; multimedia and hypermedia design principles; authoring tools.\n\nPrerequisites: CS 1073 and 60 ch. "
+    },
+    {
+      "courseID": "CS3853",
+      "name": "Computer Architecture and Organization 4ch",
+      "description": "Introduction to computer organization and architecture, digital logic, interfacing and I/O strategies, memory architecture, functional organization, multiprocessing, performance enhancements.\n\nPrerequisites: CS 2253. Note: Credit is not given for both CS 3853 and CS 3813 . "
+    },
+    {
+      "courseID": "CS3873",
+      "name": "Net-centric Computing 4ch",
+      "description": "Introduction to fundamentals of data communication and application programming in a networked environment. Topics include data transmission, data link concepts, networking concepts, network security, application protocols, net-centric computing and web programming.\n\nPrerequisite: CS 2253 . "
+    },
+    {
+      "courseID": "CS3997",
+      "name": "Professional Practice 3ch",
+      "description": "Covers social context of computing, professional and ethical responsibilities, risks and liabilities of computer-based systems, intellectual property, privacy and civil liberties, and I.S.P. certification through CIPS. Instructs students in the preparation of technical reports in Computer Science. Involves an independent study component resulting in a technical report, typically a survey paper. Covers technical writing, oral presentation and library skills.\n\nPrerequisites: Enrolment in the BCS or BISys program and 60 ch completed."
+    },
+    {
+      "courseID": "CS4003",
+      "name": "Biocomputing in Drug Design II 4ch",
+      "description": "A follow-up of CS 3003/CHEM 3003 . Topics include pharmacophore perception, solvation models, free-energy calculations, quantitative structure activity relationship (QSAR), virtual drug libraries, chemical diversity and cheminformatics. Course includes lectures and computer laboratory component. Note: This course is cross-listed as CHEM 4003 and may be taken for either Computer Science or Science credit. \n\nPrerequisite: CHEM 3003 or CS 3003 . "
+    },
+    {
+      "courseID": "CS4015",
+      "name": "Software Architecture and Design Patterns (Cross-Listed: SWE 4403) 4ch",
+      "description": "Examines pattern-oriented software architecture and development, architectural styles and patterns, design patterns, pattern systems and applications, pattern languages, and implementation techniques in various programming languages.\n\nPrerequisite: CS 2043 or permission of the instructor. "
+    },
+    {
+      "courseID": "CS4115",
+      "name": "Numerical Methods for Differential Equations 3ch",
+      "description": "The numerical solution of ordinary differential equations, and partial differential equations of elliptic, hyperbolic, and parabolic type. This course is a basic introduction to finite difference methods, including the associated theory of stability, accuracy and convergence. Students will gain practical experience using state-of-the-art numerical solvers and visualization tools while solving practical problems from the physical and biological sciences. Cross-listed as MATH 4503 .\n\nPrerequisite: One of MATH 3043 , MATH 3073 , MATH 3413 , MATH 3503 , CS 3113 , CHE 3418 ; or ME 3522 . "
+    },
+    {
+      "courseID": "CS4405",
+      "name": "Operating Systems II 4ch",
+      "description": "Covers the structure and design of operating systems. Processor management. Storage management, input/output, interprocess communication, and interrupt handling. Real-time systems, centralized systems, multiprocessor and distributed systems.\n\nPrerequisites: CS 3413 and (CS 3853 or ECE 3221). "
+    },
+    {
+      "courseID": "CS4515",
+      "name": "Systems Analysis and Design II 4ch",
+      "description": "Involves the application of systems analysis and design methodologies to actual business problems. Projects make up a large portion of the course. Emphasizes communication skills and teamwork. Limited enrolment.\n\nPrerequisite: CS 3503 . "
+    },
+    {
+      "courseID": "CS4725",
+      "name": "Introduction to Artificial Intelligence 4ch",
+      "description": "Introduction to intelligent agent design, problem solving using search techniques, the use of mathematical logic for knowledge representation and reasoning, decision making under uncertainty, machine learning techniques.\n\nPrerequisites: CS 2333 and CS 2383. "
+    },
+    {
+      "courseID": "CS4735",
+      "name": "Computer Graphics 4ch",
+      "description": "Covers interactive 3-dimensional computer graphics program development using object-oriented tools. Includes keyboard and mouse interaction, callback functions, windows and viewports, drawing parametric curves and surfaces, affine transformations, the camera model and graphics pipeline, geometric modeling using polyhedral meshes, flying a camera, arcball scene interaction, perspective projection, and visual realism via colour, lighting and texture. \n\nPrerequisites: CS 2253 and ( MATH 1503 or MATH 2213 )  . "
+    },
+    {
+      "courseID": "CS4745",
+      "name": "Introduction to Parallel Processing  4ch",
+      "description": "Parallel computer architectures, design and analysis of parallel algorithms, parallel programming languages, case studies, selected numerical and non-numerical applications.\n\nPrerequisite: CS 3853  . "
+    },
+    {
+      "courseID": "CS4805",
+      "name": "Embedded Systems 4ch",
+      "description": "This course will give an overview of the characteristics and design of embedded systems. Topics include formal models and specification languages for capturing embedded system behavior; techniques for specification, exploration and refinement; tools for validation, verification, and simulation; and quality and performance metrics.\n\nPrerequisites: CS 3413 and CS 3853 . "
+    },
+    {
+      "courseID": "CS4815",
+      "name": "Advanced Computer Architectures 4ch",
+      "description": "Study of design of advanced computer architectures. Instruction-level parallel processors (ILPs), pipelined processors, VLIW architectures, superscalar processors. Instruction-level data-parallel architectures: SIMD architectures, associative and neural architectures, data-parallel pipelined and systolic architectures, vector architectures. Thread and process-level parallel architectures, multi-threaded architectures, distributed memory architectures, shared memory architectures.\n\nPrerequisite: CS 3853  . "
+    },
+    {
+      "courseID": "CS4825",
+      "name": "Microcomputer Systems 4ch",
+      "description": "The organization of microcomputer systems will be examined in detail. Peripherals are considered as building blocks and their architecture and operation are discussed. The modular structure of control software in a real-time environment is studied including interrupt handling, polling and handshake operations. Introduction to single-chip microcomputer and development systems. \n\nPrerequisite: CS 3853 ."
+    },
+    {
+      "courseID": "CS4835",
+      "name": "Computer Assisted Logic Design 4ch",
+      "description": "Analysis of sequential machines; synchronous and asynchronous operations; design of sequential machines. Algorithms in computer-assisted logic design. Universal logic elements and threshold logic. Control logic for Digital Systems.\n\nPrerequisite: CS 3853  . "
+    },
+    {
+      "courseID": "CS4905",
+      "name": "Introduction to Compiler Construction 4ch",
+      "description": "Introduces the primary concepts and methodologies used to build compilers. Covers lexical analysis, predictive and LR parsing, compiler compilers and error handling. Syntax-directed translation using abstract parse trees, visitors, symbol tables and type checking. Object code generation including the activation record stack, parameter passing, intermediate representation trees, instruction selection, tree tiling and register allocation.\n\nPrerequisite: CS 2333 . "
+    },
+    {
+      "courseID": "CS4935",
+      "name": "Advanced Algorithmic Techniques 4ch",
+      "description": "This course covers advanced algorithmic techniques for analyzing and handling intractable and complicated tractable problems. Topics include NP-completeness and problem reductions, randomization, approximability, special case analysis, and network flow algorithms.\n\nPrerequisite: CS 3383 . "
+    },
+    {
+      "courseID": "CS4965",
+      "name": "Computational Biology 3ch",
+      "description": "Gives an overview of computational problems and algorithms for problems associated with a variety of analyses of biological molecular data. Focuses on the computational complexity of these problems and algorithms, and an understanding of the problems and potential solutions. Topics include string and sequence matching, structure comparison and analysis, evolutionary trees, and gene expressions analysis. Some commonly used tools will also be examined. No prior knowledge of biology is required.\n\nPrerequisite: CS 3383  . "
+    },
+    {
+      "courseID": "CS4983",
+      "name": "Senior Technical Report 2ch",
+      "description": "Builds on the skills developed in CS 3997 through the preparation and presentation of a technical report, which is typically a critical analysis paper.\n\nPrerequisite: CS 3997 . "
+    },
+    {
+      "courseID": "CS4995",
+      "name": "Topics in Computing 4ch",
+      "description": "A selected area of computing with a unifying theme will be explored in depth at an advanced level. This course will be offered only occasionally, with the course topic determined by the instructor and the Faculty of Computer Science. \n\nPrerequisites: Normally, enrolment in the BCS, BISys or BScSwE program, at least 100 ch completed, and permission of the instructor."
+    },
+    {
+      "courseID": "CS4997",
+      "name": "Honours Thesis 4ch",
+      "description": "This course provides the student with the opportunity to undertake a project at a depth not provided elsewhere in the curriculum. Planning the thesis is done in the term prior to completion. The project topic must have the approval of a supervisor before the start of term. The student submits detailed proposal, schedule, progress reports, and final thesis report to the thesis coordinator with the supervisor's approval. A seminar is required. Detailed guidelines available from coordinator in the preceding term. Offered as an eight month course. \n\nPrerequisite: CS 3997 . Open to all CS students in their final year with a B average in the previous assessment year or a B cgpa. To receive an Honours designation please refer to the CS Curriculum regulations in the program Section of the Calendar. "
+    },
+    {
+      "courseID": "CS4998",
+      "name": "Open Source Project 4ch",
+      "description": "An Undergraduate Capstone Open Source Project (UCOSP). Students gain hands-on experience with real-world development practices in a realistic environment while simultaneously learning and applying some core concepts of Computer Science. As part of a national initiative, senior undergraduate students from across Canada work together on open-source software projects. Students work in distributed teams with individuals from other Canadian universities. \n\nPrerequisites: Instructor approval and at least 90 ch completed. "
+    },
+    {
+      "courseID": "CS4999",
+      "name": "Directed Studies in Computer Science 4ch",
+      "description": "Students may pursue directed studies in specific areas and topics related to Computer Science. The content and process of each directed study will be through negotiation between a student and the supervising faculty member(s).\n\nPrerequisite: Faculty approval and at least 100 ch."
+    },
+    {
+      "courseID": "CS5725",
+      "name": "Neural Networks 4ch",
+      "description": "Introduction to the theory, architectures, and application of Neural Networks. Topics include fundamental models of artificial neural networks, learning rules, supervised, unsupervised and reinforcement learning in single and multi-layer neural networks, radial-basis function networks, principal component analysis, self-organizing maps,adaptive resonance theory, stochastic machines, learning capacity and generalization. \n\nPrerequisites: CS 2333 and 3 terms of calculus and statistics. "
+    },
+    {
+      "courseID": "CS5865",
+      "name": "Advanced Data Communications and Networking 4ch",
+      "description": "The course covers advanced concepts of the analysis and design of data networks and their operation; architecture, media, communication channel characteristics, routing, protocols and protocol architecture, including modeling and performance analysis. Includes introduction to network simulation.\n\nPrerequisite: CS 3873  . "
+    }
+  ]
+}
