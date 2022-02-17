@@ -43,12 +43,8 @@ public class JsonUtils {
             for (int i = 0; i < jsonArray.length(); i++) {
                 // TODO 1:
                 //  Using the JSON array update coursesArray
-
-                // Create a JSON Object from individual JSON Array element
-
-                // Get data from individual JSON Object
-
-                // Add new Course to courses ArrayList;
+                //  1. Retrieve the current object by index
+                //  2. Add new Course to courses ArrayList
             }
         } catch (JSONException e) {
             e.printStackTrace();

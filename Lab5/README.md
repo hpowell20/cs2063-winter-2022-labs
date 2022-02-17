@@ -60,24 +60,30 @@ There are two common ways to display a scrolling list of items in Android
 
 **Task 2**
 
-Complete the TODOs in `MainActivity`
-
-**Task 3**
-
-Complete the TODOs in `DetailActivity`
+Complete the TODOs in the `MainActivity`, `JsonUtils`, `MyAdaptor`, and `DetailActivity` files
 
 NOTE:
 * The `ActionBar` corresponds to the text at the top of the detail activity in the screen shot above (i.e., "CS2063 Introduction to M...")
   * This might help you -  [```getSupportActionBar()```](http://developer.android.com/reference/android/support/v7/app/AppCompatActivity.html#getSupportActionBar%28%29)
 
-**Task 4**
+**Task 3**
 
 On a smaller device (or for a very long course description) all of the text won't fit on the screen so we need to be able to scroll the text. You will also notice that there is no vertical scroll bar when the content is too long.
 
 1. Update one of the course descriptions in the CS.json file to ensure that it is long enough to scroll (if one is not already long enough)
 2. Fix the `TextView` in the `DetailActivity` to include a scrollbar.
 
+**Writeup Task - For At Home Completions Only**
+
+Create a document with the following items:
+	* A screenshot of the main activity recycler view
+  * A screenshot of the details activity
+	* A screenshot of the scrollbar added in Task 4
+
 **Lab Completion**
 
-* Show the working app running on an emulator to the instructor or TA
+* IN LAB: 
+  * Show the working app running on an emulator to the instructor or TA
+AT HOME: 
+  * Submit `MainActivity.java`, `AlarmReceiver.java`, and your answers to the writeup task to the Lab5 drop box folder on D2L 
 * Keep a copy of your project work and answers for future reference
