@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Threading Lab</string>
+    <string name="title_earthquake_list">USGS Earthquake Detail</string>
+    <string name="button_refresh">Refresh on Background Thread</string>
+    <string name="download_complete">Background thread download complete</string>
+    <string name="earthquake_details">Earthquake Details</string>
+    <string name="detail_fragment_content">Title: %1$s\nLongitude: %2$s\nLatitude: %3$s</string>
+    <string name="download_error_msg">Error occurred in background thread</string>
+    <string name="no_network_msg">No network connection available</string>
+    <string name="floating_button">Floating Button</string>
+</resources>
