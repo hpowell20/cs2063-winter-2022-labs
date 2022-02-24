@@ -65,7 +65,7 @@ public class SimpleItemRecyclerViewAdapter
                         .commit();
             } else {
                 // TODO
-                //  Create an Intent to start the parentActivity class.
+                //  Create an Intent to start GeoDataDetailFragment from the parentActivity class.
                 //  You'll need to add some extras to this intent. Look at that class, and the
                 //  example Fragment transaction for the two pane case above, to
                 //  figure out what you need to add.
