@@ -39,7 +39,7 @@ public class DownloaderTask {
         return this;
     }
 
-    public DownloaderTask setupRecyclerView(RecyclerView recyclerView) {
+    public DownloaderTask setRecyclerView(RecyclerView recyclerView) {
         this.recyclerView = recyclerView;
         return this;
     }
@@ -62,7 +62,7 @@ public class DownloaderTask {
 
             // TODO
             //  Create an instance of JsonUtils and get the data from it,
-            //  store the data in mGeoDataList
+            //  store it in a local variable
 
             // Simulating long-running operation
             for (int i = 1; i < DOWNLOAD_TIME; i++) {
@@ -96,8 +96,7 @@ public class DownloaderTask {
         //  Setup the RecyclerView
 
         // TODO
-        //  Create a Toast indicating that the download is complete. Set its text
-        //  to be the result String from doInBackground
+        //  Create a Toast indicating that the download is complete
     }
 
     private void setupRecyclerView(List<GeoData> mGeoDataList) {
