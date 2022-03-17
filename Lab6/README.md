@@ -79,7 +79,7 @@ NOTES:
 Create a document with the following items:
 	* The content downloading (button disabled, progress bar shown)
     * Additional screenshot of the floating action button still working while the background thread is executing
-  * A screenshot of the populated recylcer view
+  * A screenshot of the populated recycler view
   * A screenshot of the item detail screen
   * A screenshot showing no network connection
   
