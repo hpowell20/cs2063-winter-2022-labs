@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Room Persistence Lab</string>
+    <string name="lbl_enter_search_term">Enter a search term</string>
+    <string name="btn_add">Add</string>
+    <string name="lbl_item_edit_text_hint">Enter an item</string>
+    <string name="lbl_number_edit_text_hint">Enter a number</string>
+</resources>
