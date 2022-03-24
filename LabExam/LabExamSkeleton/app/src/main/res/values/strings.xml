@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CS2063 Lab Exam</string>
+    <string name="viewwiki">View Wikipedia Entry</string>
+    <string name="number">Number</string>
+    <string name="year">Year</string>
+    <string name="dates">Dates</string>
+</resources>
