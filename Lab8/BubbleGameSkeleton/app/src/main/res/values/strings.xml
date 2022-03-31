@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Graphics Lab</string>
+    <string name="txt_number_of_bubbles">Number of bubbles: %1$d</string>
+</resources>
